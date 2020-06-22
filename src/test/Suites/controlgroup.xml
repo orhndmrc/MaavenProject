@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="controlpage suite">
+
+    <test name="control test">
+        <classes>
+            <class name="TestNG.ControlGroup_Test"/>
+        </classes>
+    </test>
+
+
+</suite>

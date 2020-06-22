@@ -1,25 +1,29 @@
 package TestNG;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import pageObjects.ControlGroupPage;
+import pageObjects.DatePickerPage;
 import pageObjects.JQueryHPage;
 
-public class Jquery_Test {
+public class DatePicker_Test {
     WebDriver driver;
     String baseUrl;
     JQueryHPage jQueryHPage;
-    ControlGroupPage controlGroupPage;
+    DatePickerPage datePickerPage;
+
     @BeforeClass
     public void setUp(){
         System.setProperty("webdrive.chrome.driver","C:\\Users\\demir\\MaavenProject\\chrome.exe");
         baseUrl= "https://jqueryui.com/";
         driver= new ChromeDriver();
         jQueryHPage= new JQueryHPage(driver);
-        controlGroupPage= new ControlGroupPage(driver);
+        datePickerPage= new DatePickerPage(driver);
+
         driver.manage().window().maximize();
         driver.get(baseUrl);
 
@@ -33,11 +37,15 @@ public class Jquery_Test {
         driver.quit();
     }
     @Test
-   public void clickControlGroup(){
+   public void selectDateTest() throws Exception{
 
-        jQueryHPage.clickCtrlGroup();
+        jQueryHPage.clickDatePicker();
         jQueryHPage.switchFrame();
-        Assert.assertEquals(controlGroupPage.headerText(),"Controlgroup");
+        datePickerPage.clickDatePick();
+        datePickerPage.getAllDates(4);
+        Thread.sleep(5000);
+
     }
+
 
 }

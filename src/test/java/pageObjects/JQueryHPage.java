@@ -16,6 +16,9 @@ public class JQueryHPage {
     @FindBy(xpath="//aside[@class='widget']//a[contains(text(),'Controlgroup')]")
      WebElement controlGroup;
 
+    @FindBy(linkText = "Datepicker")
+    WebElement datePicker;
+
     @FindBy(className = "demo-frame")
     WebElement frame;
 
@@ -25,4 +28,7 @@ public class JQueryHPage {
      public void switchFrame(){
          jquery.switchTo().frame(frame);
 }
+   public void clickDatePicker(){
+         datePicker.click();
+   }
 }
