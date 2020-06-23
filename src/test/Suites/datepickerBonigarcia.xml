@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="datepicker page suite">
+
+    <test name="datepicker test">
+        <classes>
+            <class name="TestNG.DatePickerBonigarcia_Test"/>
+        </classes>
+    </test>
+
+
+</suite>
