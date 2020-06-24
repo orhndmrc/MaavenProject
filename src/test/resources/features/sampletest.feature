@@ -3,7 +3,7 @@
 Feature: JQuery homepage
 Test the homepage of https://jqueryui.com/ website
 
-  Background: Initial
+
     Given I am on the jquery homepage
 @controlgroup @rwgrwssion
   Scenario: Testing controlgroup button

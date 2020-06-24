@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         dryRun = false,//executes the features and suggests undefined stepdefs skeleton code without failing
         features = "classpath:features",//location of the features file folder
         glue = {"stepDefs"},
-        tags = "@regression",
+        tags = "@login or @doublequoteparams",
         plugin = {"pretty","html:target/cucumber.html","json:target/cucumber.json"}//gives us a report under target file
 
 )
