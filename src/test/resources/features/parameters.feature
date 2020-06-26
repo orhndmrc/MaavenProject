@@ -24,3 +24,34 @@ Feature:  Practuce for parameterization
     |    value3           |user3   |password3|
     |    value 4 abc 123  |user4   |password4|
 
+
+    @mapparams
+Scenario: multiple params
+  #Given I enter first name"some fn" and last name "some last"
+  Given I fill signup form
+    | first name    | some fn         |
+    | last name     | some ln         |
+    | address line1 | 200 some street |
+    | address line2 | Suite A4        |
+    | zip code      | 10001           |
+    | City          | Ney York        |
+    | State         | NY              |
+
+      Then I fill bankapplication form
+        | first name    | some fn         |
+        | last name     | some ln         |
+        | address line1 | 200 some street |
+        | address line2 | Suite A4        |
+        | zip code      | 10001           |
+        | City          | Ney York        |
+        | State         | NY              |
+
+
+      And I fill registration form
+        | first name    | some fn         |
+        | last name     | some ln         |
+        | address line1 | 200 some street |
+        | address line2 | Suite A4        |
+        | zip code      | 10001           |
+        | City          | Ney York        |
+        | State         | NY              |

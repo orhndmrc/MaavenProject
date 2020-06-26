@@ -4,12 +4,30 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import managers.DriverMgr;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import pageObjects.DatePickerPage;
+import pageObjects.JQueryHPage;
 
-public class HomepageDefs {
+
+
+public class HomepageDefs  {
+    WebDriver driver;
+    String baseUrl;
+    JQueryHPage jQueryHPage;
+    DatePickerPage datePickerPage;
+
     @Given("I am on the jquery homepage")
     public void i_am_on_the_jquery_homepage() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("inside given");
+        baseUrl= "https://jqueryui.com/";
+        driver= DriverMgr.getDriver();
+        jQueryHPage= new JQueryHPage(driver);
+        datePickerPage= new DatePickerPage(driver);
+        driver.manage().window().maximize();
+        driver.get(baseUrl);
     }
 
     @When("I click on controlgroup")
@@ -27,6 +45,7 @@ public class HomepageDefs {
     public void i_click_on_datepicker() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("inside date picker landing page");
+        jQueryHPage.clickDatePicker();
     }
 
 
@@ -54,6 +73,7 @@ public class HomepageDefs {
    @And("I switch to demo-frame")
     public void switch_demo_frame(){
        System.out.println("switching to demo-frame");
+       jQueryHPage.switchFrame();
    }
 
 
