@@ -14,7 +14,7 @@ import pageObjects.JQueryHPage;
 
 public class HomepageDefs  {
     WebDriver driver;
-    String baseUrl;
+    //String baseUrl;
     JQueryHPage jQueryHPage;
     DatePickerPage datePickerPage;
 
@@ -22,12 +22,12 @@ public class HomepageDefs  {
     public void i_am_on_the_jquery_homepage() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("inside given");
-        baseUrl= "https://jqueryui.com/";
+       // baseUrl= "https://jqueryui.com/";
         driver= DriverMgr.getDriver();
         jQueryHPage= new JQueryHPage(driver);
         datePickerPage= new DatePickerPage(driver);
-        driver.manage().window().maximize();
-        driver.get(baseUrl);
+//        driver.manage().window().maximize();---> moved to @Before hook
+//        driver.get(baseUrl);---> moved to @Before hook
     }
 
     @When("I click on controlgroup")

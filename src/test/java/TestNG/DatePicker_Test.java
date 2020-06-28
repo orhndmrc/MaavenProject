@@ -1,5 +1,6 @@
 package TestNG;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -26,7 +27,7 @@ public class DatePicker_Test {
 
         driver.manage().window().maximize();
         driver.get(baseUrl);
-
+driver.findElements(By.xpath("xpath here")).size();
 
 //        driver.findElement(By.id("//aside[@class='widget']//a[contains(text(),'Controlgroup')]")).click();
 //       driver.switchTo().frame("iframe.demo-frame");
