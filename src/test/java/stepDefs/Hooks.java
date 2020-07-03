@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Hooks {
     WebDriver driver;
-    @Before
+   @Before
     public void setUp(){
         driver= DriverMgr.getDriver();
         String baseUrl= "https://jqueryui.com/";

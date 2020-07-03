@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-22T07:36:48 EDT" name="datepicker page suite" finished-at="2020-06-22T07:37:08 EDT" duration-ms="20024">
+    <groups>
+    </groups>
+    <test started-at="2020-06-22T07:36:48 EDT" name="datepicker test" finished-at="2020-06-22T07:37:08 EDT" duration-ms="20024">
+      <class name="TestNG.DatePickerBonigarcia_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestNG.DatePickerBonigarcia_Test@44a664f2]" started-at="2020-06-22T07:36:48 EDT" name="setUp" finished-at="2020-06-22T07:36:59 EDT" duration-ms="10898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="selectDateTest()[pri:0, instance:TestNG.DatePickerBonigarcia_Test@44a664f2]" started-at="2020-06-22T07:36:59 EDT" name="selectDateTest" finished-at="2020-06-22T07:37:06 EDT" duration-ms="7128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDateTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.DatePickerBonigarcia_Test@44a664f2]" started-at="2020-06-22T07:37:06 EDT" name="tearDown" finished-at="2020-06-22T07:37:08 EDT" duration-ms="1940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestNG.DatePickerBonigarcia_Test -->
+    </test> <!-- datepicker test -->
+  </suite> <!-- datepicker page suite -->
+</testng-results>

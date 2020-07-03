@@ -1,0 +1,123 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-27T18:17:43.547Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9651942200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "checkboxradio page testing",
+        "description": "",
+        "id": "checkboxradio-test;checkboxradio-page-testing",
+        "after": [
+          {
+            "result": {
+              "duration": 1004707900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 101728300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I navigate to jquery homepage",
+            "match": {
+              "location": "stepDefs.CheckboxradioDefs.i_navigate_to_jquery_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2620762600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on checkboxradio button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "checkboxradio",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.CheckboxradioDefs.i_click_on_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 176534000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I switch the frame",
+            "match": {
+              "location": "stepDefs.CheckboxradioDefs.i_switch_the_frame()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 519677200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on 4 hotel rating",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.CheckboxradioDefs.i_click_on_hotel_rating(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 206447300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I validate if the button is selected",
+            "match": {
+              "location": "stepDefs.CheckboxradioDefs.i_validate_if_the_button_is_selected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkbox"
+          }
+        ]
+      }
+    ],
+    "name": "checkboxradio test",
+    "description": "",
+    "id": "checkboxradio-test",
+    "keyword": "Feature",
+    "uri": "classpath:features/checkboxradio.feature",
+    "tags": []
+  }
+]
